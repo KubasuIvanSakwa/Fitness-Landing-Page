@@ -1,10 +1,28 @@
+import { useState } from "react"
 import { NavHashLink as Link } from "react-router-hash-link"
-
+import Hero1 from "../../src/assets/hero.jpg"
+import Hero2 from "../../src/assets/hero1.jpg"
+import toLeft from "../../src/assets/to-left.svg"
+import toRight from "../../src/assets/to-right.svg"
 
 function Hero() {
+    const [currentIndex, setCurrentIndex] = useState(0)
+
+    const slides = [
+        {url: `${Hero1}`, title: "one"},
+        {url: `${Hero2}`, title: "two"},
+    ]
     
     return (
-        <section className="hero-sect" id="hero">
+        <section className="hero-sect" id="hero" style={slideStyles}>
+            <div>
+                <img src={toLeft} />
+            </div>
+
+            <div>
+                <img src={toRight} />
+            </div>
+
             <h1>JOIN FITNEZZ TODAY</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
