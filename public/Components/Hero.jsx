@@ -31,13 +31,13 @@ function Hero() {
                 commodo consequat.
             </p>
             <Link
-                to=""
+                to="/"
             >
                 GET STARTED
             </Link>
 
             <Link
-                to=""
+                to="/"
             >
                 DOWNLOAD
             </Link>
