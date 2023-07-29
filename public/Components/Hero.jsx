@@ -15,11 +15,11 @@ function Hero() {
     
     return (
         <section className="hero-sect" id="hero" style={slideStyles}>
-            <div>
+            <div style={}>
                 <img src={toLeft} />
             </div>
 
-            <div>
+            <div style={}>
                 <img src={toRight} />
             </div>
 
