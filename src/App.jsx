@@ -1,16 +1,12 @@
-import Hero from '../public/Components/Hero'
-import Nav from '../public/Components/Nav'
+import AllPages from '../public/Components/AllPages'
+import { BrowserRouter } from "react-router-dom"
 import './App.css'
-import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 function App() {
 
   return (
     <BrowserRouter>
-    <Nav />
-      <Routes>
-        <Route path="/hero" element={<Hero />} />
-      </Routes> 
+      <AllPages />
     </BrowserRouter>
   )
 }
