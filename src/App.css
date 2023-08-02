@@ -1,46 +1,123 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+#root, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+nav {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  top: 20px;
+
+  padding: 20px;
+  width: 100%;
+  z-index: 20;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-links {
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav-links h1 {
+  color: white;
 }
 
-.card {
-  padding: 2em;
+.nav-links h1 span {
+  margin-right: 5rem;
+  color: rgba(199, 189, 189, 0.897);
 }
 
-.read-the-docs {
-  color: #888;
+.nav-links a{
+  text-decoration: none;
+  padding: 1.5rem;
+  color: rgb(216, 211, 211);
 }
+
+.serv {
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+.lin {
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(230, 40, 78);
+  color: white;
+  
+  height: 50px;
+  width: 180px;
+  font-size: 15px;
+  margin-right: 100px;
+
+}
+
+
 
 .direction img {
   width: 20px;
+}
+
+.slid-holder {
+  width: 100%;
+  height: 100vh;
+}
+
+.slid-holder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1;
+  opacity: .4;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  height: 100vh;
+  width: 100%;
+  z-index: 3;
+}
+
+.hero-content h1  {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.hero-content  p { 
+  font-size: 23px;
+  width: 900px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.get-started {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.download {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  
+  padding: 10px;
+  margin-top: 10px;
 }
