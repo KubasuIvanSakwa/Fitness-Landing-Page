@@ -42,7 +42,7 @@ function ImageSlider({ slides }) {
         borderRadius: "50%",
         display: "flex",
         justifyContent: "center",
-        zIndex: "3"
+        zIndex: "4"
     }
 
     const rightArrowStyles = {
@@ -58,7 +58,7 @@ function ImageSlider({ slides }) {
         borderRadius: "50%",
         display: "flex",
         justifyContent: "center",
-        zIndex: "3"
+        zIndex: "4"
     }
 
     const gotToPrevious = () => {
