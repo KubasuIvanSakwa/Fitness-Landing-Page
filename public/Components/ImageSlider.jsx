@@ -7,7 +7,7 @@ function ImageSlider({ slides }) {
     const [currentIndex, setCurrentIndex] = useState(0)
 
     useEffect(() => {
-        // Set an interval to change the slide every 5 seconds (adjust as needed)
+        // Set an interval to change the slide every 7 seconds (adjust as needed)
         const interval = setInterval(() => {
             gotToNext();
         }, 7000);
@@ -38,7 +38,7 @@ function ImageSlider({ slides }) {
         height: "40px",
         zIndex: 1,
         cursor: "pointer",
-        backgroundColor: "rgba(255,250,255, .1",
+        backgroundColor: "rgba(255,250,255, .1)",
         borderRadius: "50%",
         display: "flex",
         justifyContent: "center",
