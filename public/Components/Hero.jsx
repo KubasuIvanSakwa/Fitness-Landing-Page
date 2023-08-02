@@ -22,7 +22,7 @@ function Hero() {
                 <img src={toLeft} />
             </div>
 
-            <div style={}>
+            <div>
                 <img src={toRight} />
             </div>
 
