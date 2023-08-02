@@ -18,10 +18,11 @@ function Hero() {
         >
             {/**style={slideStyles}**/}
             <div>
+
                 <img src={toLeft} />
             </div>
 
-            <div>
+            <div style={}>
                 <img src={toRight} />
             </div>
 
@@ -33,13 +34,13 @@ function Hero() {
                 commodo consequat.
             </p>
             <Link
-                to=""
+                to="/"
             >
                 GET STARTED
             </Link>
 
             <Link
-                to=""
+                to="/"
             >
                 DOWNLOAD
             </Link>
