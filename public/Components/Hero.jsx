@@ -10,12 +10,15 @@ function Hero() {
 
     const slides = [
         {url: `${Hero1}`, title: "one"},
-        {url: `${Hero2}`, title: "two"},
+        {url: `${Hero2}`, title: "two"}
     ]
     
     return (
-        <section className="hero-sect" id="hero" style={slideStyles}>
-            <div style={}>
+        <section className="hero-sect" id="hero"
+        >
+            {/**style={slideStyles}**/}
+            <div>
+
                 <img src={toLeft} />
             </div>
 
@@ -42,7 +45,7 @@ function Hero() {
                 DOWNLOAD
             </Link>
         </section>
-    );
+    )
 }
 
-export default Hero;
+export default Hero
